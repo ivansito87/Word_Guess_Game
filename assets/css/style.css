@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(rgba(26, 76, 158, 0.8), rgba(0, 0, 0, 0.8)), url(../images/giphy.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 40px;
+  background:rgba(255, 255, 255, 0.171);
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right:10%;
+  padding: 30px;
+  font-family: 'Play', sans-serif;
+  border-radius: 20px;
+  color:white;
+}
+
+h2 {
+  font-family: 'Play', sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+
+img {
+  border-radius: 50px;
+  width: 90%;
+}
+
+
+.sidebar {
+  position: relative;
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+}
+
+span { 
+  padding-left: 6px;
+  padding-right:6px;
+  background-color: none;
+  border-radius: 10px; 
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5px;
+  text-align: center;
+  border: none;
+  padding: 1px;
+}
+
+#displayedWord {
+  font-size: 30px;
+  font-family: 'Play', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+

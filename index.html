@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ivan's WGG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="icon" href="https://www.freeiconspng.com/uploads/disco-cd-music-icon-png-5.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="heading">
+    <h1>Music Genre Hangman ¯\_(ツ)_/¯ </h1>
+  </div>
+  <div class="background">
+    <div class="container">
+      <h2>Press any key to begin! </h2>
+      <div>
+        <img id="image" src="assets/images/original.gif" width="100%" height="300">
+      </div>
+      <div>
+        <h3 id="displayedWord"></h3>
+      </div>
+      <div>
+        <div class="sidebar">
+          <h3>Attempts Remaining &raquo
+            <span id="guessesLeft"></span>
+          </h3>
+        </div>
+        <div class="sidebar">
+          <h3>Wins &raquo
+            <span id="winCount"></span>
+          </h3>
+        </div>
+        <div class="sidebar">
+          <h3>Loss &raquo
+            <span id="lossCount"></span>
+          </h3>
+        </div>
+        <div class="sidebar">
+          <h3>Your Mistakes! &raquo
+            <span id="wrongGuesses"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -13,12 +13,17 @@ var guessesLeft = 9;
 // Functions
 
 function gameBegins() {
-    theWord = genre[Math.floor(Math.random() * genre.length)];
-    lettersOfWord = theWord.split("");
-    spaces = lettersOfWord.length;
+    theWord = genre[Math.floor(Math.random() * genre.length)]; // pulls the word from the array 
+    lettersOfWord = theWord.split("");  // Splits the word into an array var= ["r", "o", "c", "k"]    
+    console.log(lettersOfWord)
+    spaces = lettersOfWord.length;     // sets a variable containing the number of items in the word in this case the arra
+    console.log(spaces)                // array created one line before         
+    
+    // loops to push the number of var = spaces from the variable to show in the space designated for the word in the html and creates
+    //                                
     for (var i = 0; i < spaces; i++) {
-        currentGuessed.push("_");
-    }
+        currentGuessed.push("_");       // pushes a underscore equivalent to the number of spaces from above to populate the 
+    }                                   // to populate the array created in the beginning currentGuessed = []    
     document.getElementById("displayedWord").innerHTML = "  " + currentGuessed.join("  ");
 }
 

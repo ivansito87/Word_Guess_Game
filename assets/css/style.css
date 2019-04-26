@@ -4,19 +4,22 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-shadow: 0px 3px 0px #a48fb2, 0px 14px 10px rgb(0, 0, 0), 0px 24px 2px rgba(0, 0, 0, 0.13), 0px 34px 30px rgb(0, 0, 0);
 }
 
 h1 {
   font-size: 40px;
-  background:rgba(37, 31, 31, 0.404);
+  background: rgba(76, 117, 116, 0.67);
   text-align: center;
   margin-top: 2%;
   margin-left: 10%;
-  margin-right:10%;
+  margin-right: 10%;
   padding: 30px;
   font-family: 'Play', sans-serif;
   border-radius: 20px;
-  color:white;
+  color: white;
+  box-shadow: 0px 0px 0px, 0px 0px 20px 8px rgba(0, 0, 0, 0), 0px 0px 2px rgba(0, 0, 0, 0.13), 1px 0px 30px 20px rgba(0, 0, 0, 0.76);
+  margin-bottom: 35px;
 }
 
 h2 {
@@ -24,14 +27,14 @@ h2 {
   font-size: 40px;
   color: rgb(255, 255, 255);
   padding: 20px 0 20px 0;
+  text-shadow: 0px 3px 0px #a48fb2, 0px 14px 10px rgb(0, 0, 0), 0px 24px 2px rgba(0, 0, 0, 0.13), 0px 34px 30px rgb(0, 0, 0);
 }
-
 
 img {
   border-radius: 50px;
   width: 70%;
+  box-shadow: 0px 0px 0px, 0px 0px 20px 8px rgba(0, 0, 0, 0), 0px 0px 2px rgba(0, 0, 0, 0.13), 1px 0px 30px 20px rgba(0, 0, 0, 0.76);
 }
-
 
 .sidebar {
   position: relative;
@@ -41,17 +44,17 @@ img {
   font-size: 15px;
 }
 
-span { 
+span {
   padding-left: 6px;
-  padding-right:6px;
+  padding-right: 6px;
   background-color: none;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-family: 'Play', sans-serif;
   font-size: 20px;
 }
 
 .container {
-  background-color: rgba(37, 31, 31, 0.404);
+  background-color: rgba(76, 117, 116, 0.67);
   border-radius: 50px;
   margin-top: 30px;
   margin-left: 20%;
@@ -60,6 +63,7 @@ span {
   text-align: center;
   border: none;
   padding: 1px;
+  box-shadow: 0px 0px 0px, 0px 0px 20px 8px rgba(0, 0, 0, 0), 0px 0px 2px rgba(0, 0, 0, 0.13), 1px 0px 30px 20px rgba(0, 0, 0, 0.76);
 }
 
 #displayedWord {
@@ -69,19 +73,39 @@ span {
   margin-top: 10px;
   color: white;
 }
+
 footer {
   font-size: 20px;
-  background:rgba(37, 31, 31, 0.404);
+  background: rgba(76, 117, 116, 0.67);
   text-align: center;
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 10%;
-  margin-right:10%;
+  margin-right: 10%;
   padding: 30px;
   font-family: 'Play', sans-serif;
   border-radius: 20px;
-  color:white;
+  color: white;
+  box-shadow: 0px 0px 0px, 0px 0px 20px 8px rgba(0, 0, 0, 0), 0px 0px 2px rgba(0, 0, 0, 0.13), 1px 0px 30px 20px rgba(0, 0, 0, 0.76);
 }
 
 a:hover {
-   color: rgb(45, 95, 235);
+  color: rgb(45, 95, 235);
+}
+
+html {
+  cursor: none;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  animation: rotate 2.5s infinite linear;
+  margin: 0;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }

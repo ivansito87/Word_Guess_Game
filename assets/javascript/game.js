@@ -12,14 +12,19 @@ var guessesLeft = 9;            // here is how many attempts does the user has
 
 // Functions
 
-function gameBegins() {                                         // starts the game
-    theWord = genre[Math.floor(Math.random() * genre.length)];  // first we need to generate a word from the genre array 
-    lettersOfWord = theWord.split("");                          // then we split the word into an array where each one of its characters represents an index
-    spaces = lettersOfWord.length;                              // we set the varable spaces equal to the number of letters in the word
-    for (var i = 0; i < spaces; i++) {                          // here we are pusing a _ underscore to the array of current guessed so that we can use this in the HTML
-        currentGuessed.push("_");                               // and we push as many lines as there are charactrs in the array 
-    }
-    document.getElementById("displayedWord").innerHTML = "  " + currentGuessed.join("  ");      // here we place the _ spaces in to the HTML 
+function gameBegins() {
+    theWord = genre[Math.floor(Math.random() * genre.length)]; // pulls the word from the array 
+    lettersOfWord = theWord.split("");  // Splits the word into an array var= ["r", "o", "c", "k"]    
+    console.log(lettersOfWord)
+    spaces = lettersOfWord.length;     // sets a variable containing the number of items in the word in this case the arra
+    console.log(spaces)                // array created one line before         
+    
+    // loops to push the number of var = spaces from the variable to show in the space designated for the word in the html and creates
+    //                                
+    for (var i = 0; i < spaces; i++) {
+        currentGuessed.push("_");       // pushes a underscore equivalent to the number of spaces from above to populate the 
+    }                                   // to populate the array created in the beginning currentGuessed = []    
+    document.getElementById("displayedWord").innerHTML = "  " + currentGuessed.join("  ");
 }
 
 function resetGame() {              // function to reset the game 
@@ -75,4 +80,3 @@ document.onkeyup = function (event) {
     complete();
     document.getElementById("wrongGuesses").innerHTML = "  " + wrongGuess.join(" ");
 }
-
